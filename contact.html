@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+      position: relative;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .back-btn:hover {
+      color: #0056b3;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #333;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #aaa;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #007bff;
+    }
+
+    .form-group select {
+      appearance: none;
+      padding-right: 25px;
+    }
+
+    .form-group textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    .submit-btn {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .contact-form {
+        padding: 25px;
+      }
+      .back-btn {
+        top: 10px;
+        left: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="contact-form">
+      <a href="index.html" class="back-btn" style=" font-size: 50px;">&larr;</a>
+      <h2>Contact Us</h2>
+
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Contact Number" pattern="[0-9]{10}" required />
+      </div>
+
+      <div class="form-group">
+        <select name="speciality" required>
+          <option value="" disabled selected>Select Speciality</option>
+          <option>Cardiology</option>
+          <option>Neurology</option>
+          <option>Orthopedics</option>
+          <option>General Surgery</option>
+          <option>Pediatrics</option>
+          <option>Dermatology</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+  <footer style="background-color: #0a4275; padding: 20px; text-align: center; font-family: Arial, sans-serif; color: white;">
+    <p style="margin: 0;">&copy; 2025 <a href="https://brandbanao.ai/index.html" style="color: rgb(228, 212, 25);">Brand Banao.Ai.</a> All rights reserved.</p>
+    <p style="margin: 5px 0;">
+       
+        <a href="contact.html" style="text-decoration: none; color: #ffffff;">Contact Us</a>
+    </p>
+    <div style="margin-top: 10px;">
+       Powered by <a href="https://brandbanao.ai/index.html" style="color:  rgb(228, 212, 25);">BrandBanao.Ai</a>
+    </div>
+</footer>
+</body>
+</html>
